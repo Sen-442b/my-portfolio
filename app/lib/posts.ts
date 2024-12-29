@@ -20,7 +20,7 @@ function parseFrontmatter(fileContent: string) {
   frontMatterLines.forEach((line) => {
     let [key, ...valueArr] = line.split(": ");
     let value = valueArr.join(": ").trim();
-    value = value.replace(/^['"](.*)['"]$/, "$1"); 
+    value = value.replace(/^['"](.*)['"]$/, "$1");
     metadata[key.trim() as keyof Metadata] = value;
   });
 
@@ -51,7 +51,19 @@ function getMDXData(dir: string) {
 }
 
 export function getBlogPosts() {
-  return getMDXData(path.join(process.cwd(), "content"));
+  const contentDir = path.join(process.cwd(), "content");
+  try {
+    const files = fs.readdirSync(contentDir);
+    if (files.length === 0) {
+      console.log("No blog posts found.");
+      return [];
+    }
+
+    return getMDXData(contentDir);
+  } catch (error) {
+    console.error("Error reading content directory:", error);
+    return [];
+  }
 }
 
 export function formatDate(date: string, includeRelative = false) {
