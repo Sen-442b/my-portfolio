@@ -3,7 +3,7 @@ import { formatDate, getBlogPosts } from "app/lib/posts";
 
 export const metadata = {
   title: "Blog",
-  description: "Nextfolio Blog",
+  description: "Blogs written by Shubhendu Sen",
 };
 
 export default function BlogPosts() {
@@ -11,9 +11,9 @@ export default function BlogPosts() {
 
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-medium tracking-tight">Our Blog</h1>
+      <h1 className="mb-8 text-2xl font-medium tracking-tight">Blogs</h1>
       <div>
-        {allBlogs
+       {allBlogs.length?(allBlogs
           .sort((a, b) => {
             if (
               new Date(a.metadata.publishedAt) >
@@ -38,7 +38,7 @@ export default function BlogPosts() {
                 </p>
               </div>
             </Link>
-          ))}
+          ))):(<p>Nothing to see here currently </p>)}
       </div>
     </section>
   );

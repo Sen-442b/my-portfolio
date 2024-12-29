@@ -1,6 +1,7 @@
 import React from "react";
 import type { Metadata } from "next";
 import { projects } from "./project-data";
+import ResumeLink from "app/components/resume-link";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -36,6 +37,7 @@ export default function Projects() {
           </a>
         ))}
       </div>
+      <ResumeLink url="https://drive.google.com/file/d/1eMWrRw1OE70GTR0MB7D7CXS_ZkzQG7nh/view?usp=drive_link" />
     </section>
   );
 }
