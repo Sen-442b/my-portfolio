@@ -1,5 +1,5 @@
 export const metaData = {
-  baseUrl: "https://sen442b.dev",
+  baseUrl: "https://shubhendusen.com",
   title: "Shubhendu Sen",
   name: "Shubhendu",
   ogImage: "/opengraph-image.png",
@@ -7,7 +7,7 @@ export const metaData = {
 };
 
 export const socialLinks = {
-  bluesky: "https://sen442b.bsky.social",
+  bluesky: "https://bsky.app/profile/shubhendusen.com",
   twitter: "https://x.com/sen_shubhendu",
   github: "https://github.com/Sen-442b",
   linkedin: "https://www.linkedin.com/in/shubhendu-sen-771830156/",
