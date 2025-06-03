@@ -29,7 +29,7 @@ export default function Experience() {
           </div>
         ))}
       </div>
-      <ResumeLink url="https://drive.google.com/file/d/1eMWrRw1OE70GTR0MB7D7CXS_ZkzQG7nh/view?usp=drive_link" />
+      <ResumeLink url="https://drive.google.com/file/d/1eItWsqAp83rv0GgKCOtpx0c8i09U8VQ_/view?usp=sharing" />
     </section>
   );
 }
