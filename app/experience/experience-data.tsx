@@ -7,6 +7,13 @@ export interface Experience {
   
   export const experience: Experience[] = [
     {
+        title: "CyberDocs",
+        period: "May' 2026- Aug' 2026",
+        description:
+          "Conducted GRC gap assessments, security control reviews, and audit evidence validation, while drafting and reviewing security policies aligned with ISO/IEC 27002 requirements.",
+        url: "https://coulomb.ai/",
+      },,
+    {
       title: "Freelance Developer",
       period: "Jan 2024 - Present",
       description:
