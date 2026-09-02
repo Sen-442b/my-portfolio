@@ -12,7 +12,7 @@ export interface Experience {
         description:
           "Conducted GRC gap assessments, security control reviews, and audit evidence validation, while drafting and reviewing security policies aligned with ISO/IEC 27002 requirements.",
         url: "https://coulomb.ai/",
-      },,
+      },
     {
       title: "Freelance Developer",
       period: "Jan 2024 - Present",
